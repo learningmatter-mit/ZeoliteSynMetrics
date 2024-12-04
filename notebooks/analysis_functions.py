@@ -39,7 +39,6 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 from ase import units
-from constants import EV_TO_KJ_MOL, K_BOLTZMANN
 from file_manipulation_functions import csv_to_dict
 from matplotlib import cm
 from scipy.special import softmax
@@ -60,6 +59,8 @@ SACKUR_TETRODE_TEMP = 298  # K
 ALPHA = 6.253e-3  # unitless
 BETA = 0.5  # unitless
 V_CRIT_ALT = 50.0  # Angstrom^3
+K_BOLTZMANN = 0.008314463  # kJ/mol/K
+EV_TO_KJ_MOL = 96.485  # kJ/mol
 
 REFERENCEPRESSURE = 1.0e5  # Pa (equivalent to 1 bar)
 
