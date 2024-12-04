@@ -1,3 +1,5 @@
+data/sisso_sample_with_expr.csv
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
