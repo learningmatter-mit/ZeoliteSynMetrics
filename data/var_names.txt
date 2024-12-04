@@ -1,0 +1,16 @@
+E_F
+dE_Oa
+dE_Om
+dE_S
+dE_fOa
+dE_fOm
+dE_fS
+lC_Oa
+lC_Om
+lC_S
+lD_Oa
+lD_Om
+lD_S
+lC_fOa
+lC_fS
+lD_fS
