@@ -21,3 +21,11 @@ There are 5 Python notebooks in the `notebooks` directory:
 5. `analysis.ipynb`: this notebook analyzes the data for our manuscript and contains the code to reproduce the plots. Specifically, it:
     - computes the literature recall area-under-the-curve (AUC) for the various metrics that we constructed in the paper ($E_{ij,T}$, $E_{\text{form},ij,T}$, $\Delta E_{\text{form},ij}$, $A_{ij,T}$, and the best SISSO descriptor $\alpha_T$)
     - reproduces all of the plots in the main text of the manuscript and most of the plots in the supporting information
+
+To run most of the notebooks, a minimal python installation is required. Most of the packages can be installed by running
+
+```python
+pip install ase matplotlib numpy pandas scikit-learn scipy seaborn tqdm
+```
+
+`PyTorch` is required to run the `classifier_tests.ipynb` notebook. Please follow the installation instructions for `PyTorch` [here](https://pytorch.org/get-started/locally/).

@@ -3,39 +3,30 @@ requires = ["setuptools >= 50.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "htvs"
+name = "ZeoliteSynMetrics"
 version = "0.1.0"
-description = "High-throughput virtual screening for materials discovery"
-authors = [{ name = "Rafael Gomez-Bombarelli", email = "rafagb@mit.edu" }]
-requires-python = ">=3.6"
+description = "Descriptors for predicting zeolite synthesis"
+authors = [{ name = "Alexander Hoffman", email = "ajhoff29@mit.edu" }]
+requires-python = ">=3.9"
 readme = "README.md"
 license = { text = "MIT" }
 dependencies = [
     "ase",
-    "cclib",
-    "deepchem",
-    "django",
-    "jinja2",
-    "munch",
-    "networkx",
+    "matplotlib",
     "numpy>=1.21.6",
-    "openmm",
-    "pymatgen",
-    "rdkit",
+    "pandas",
     "scikit-learn",
     "scipy",
+    "seaborn",
     "torch>=1.9.0",
     "tqdm",
 ]
 classifiers = [
     "Intended Audience :: Science/Research",
     "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
-    "Programming Language :: Python :: 3.6",
-    "Programming Language :: Python :: 3.7",
-    "Programming Language :: Python :: 3.8",
-    "Programming Language :: Python :: 3.9",
     "Topic :: Scientific/Engineering :: Chemistry",
     "Topic :: Scientific/Engineering :: Physics",
 ]
@@ -43,14 +34,11 @@ classifiers = [
 [project.optional-dependencies]
 test = ["pytest", "pytest-cov"]
 
-[project.urls]
-Homepage = "https://github.mit.edu/MLMat/htvs/"
-
 [tool.ruff]
 include = ["**/pyproject.toml", "*.ipynb", "*.py", "*.pyi"]
-exclude = ["__init__.py", "migrations/*.py", "allxyz_lastgrad.py", "mopac_ints_rhf.py", "dbsettings.py"]
+exclude = ["__init__.py"]
 line-length = 100
-src = [".", "djangochem"]
+src = ["."]
 
 [tool.ruff.format]
 docstring-code-format = true
